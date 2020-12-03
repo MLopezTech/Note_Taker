@@ -4,7 +4,7 @@ const fs = require("fs");
 
 
 var application = express();
-var portUsed = process.env.portUsed || 8080
+var portUsed = process.env.PORT || 8080
 
 
 application.use(express.urlencoded({ extended: true }));
